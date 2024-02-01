@@ -5,6 +5,9 @@ import cv2
 input = "input.mp4"
 output = "output.mp4"
 
+#change the delay (in frames) here
+delay = 5
+
 def process(input, output, delay):
     video = cv2.VideoCapture(input)
     fps = video.get(cv2.CAP_PROP_FPS)
@@ -29,4 +32,4 @@ def process(input, output, delay):
     final_video.release()
     print("Done!")
     
-process(input, output, 30)
+process(input, output, delay)
