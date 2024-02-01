@@ -25,4 +25,5 @@ def process(input, output, delay):
         print(i + 1, "of", int(total_frames - delay))   
     final_video.release()
     print("Done!")
+    
 process(input, output, delay)
